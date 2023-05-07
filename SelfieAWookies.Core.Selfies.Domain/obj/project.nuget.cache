@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "gbHTYZbsiG8rNHDzgdK8B1pmH3113Ssdek9yuNlKxXaO5DQyHgeQwOt1zYHp88F7oavOcs+PFZ8WymNlQtnGNg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\SelfieAWookies.Core.Selfies.Domain\\SelfieAWookies.Core.Selfies.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jerom\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.15\\microsoft.windowsdesktop.app.ref.6.0.15.nupkg.sha512",
+    "C:\\Users\\jerom\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.15\\microsoft.netcore.app.ref.6.0.15.nupkg.sha512",
+    "C:\\Users\\jerom\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.15\\microsoft.aspnetcore.app.ref.6.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}
