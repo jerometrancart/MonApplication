@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HbbyaVAjlfbFofz9WGlBcm2DdTGF9gjfN3Ls4HfRrDyq+WD3OSst5pGZ2zvy3pjjHO3HUWBgvp5QO/ruXNxSog==",
+  "dgSpecHash": "XHn+xgw2+JotXcUzsc4bvWzB29psQN1NamnoL1XC6MwmWWq3Q99lZRslT0JTW0BykiyuH64VzYsW+JKYkI3tFw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\MonApplication\\MonApplication.csproj",
+  "projectFilePath": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\MonApplication\\SelfieAWookie.API.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jerom\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\jerom\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

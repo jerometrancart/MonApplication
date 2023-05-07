@@ -230,9 +230,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\MonApplication\\MonApplication.csproj",
-      "projectName": "MonApplication",
-      "projectPath": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\MonApplication\\MonApplication.csproj",
+      "projectUniqueName": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\MonApplication\\SelfieAWookie.API.UI.csproj",
+      "projectName": "SelfieAWookie.API.UI",
+      "projectPath": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\MonApplication\\SelfieAWookie.API.UI.csproj",
       "packagesPath": "C:\\Users\\jerom\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\MonApplication\\obj\\",
       "projectStyle": "PackageReference",
