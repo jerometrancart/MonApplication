@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SelfieAWookies.Core.Selfies.Infrastructure.Data;
+using SelfieAWookies.Core.Selfies.Infrastructures.Data;
 using SelfieAWookie.API.UI;
+using SelfieAWookies.Core.Selfies.Domain;
 
 namespace SelfieAWookie.API.UI.Controllers
 {
@@ -11,12 +12,12 @@ namespace SelfieAWookie.API.UI.Controllers
     public class SelfiesController : ControllerBase
     {
         #region Fields
-        private readonly SelfiesContext? _context = null;
+        private readonly ISelfieRepository? _repository = null;
         #endregion
         #region Constructor
-        public SelfiesController(SelfiesContext context)
+        public SelfiesController(ISelfieRepository repository)
         {
-            this._context = context;
+            this._repository = repository;
         }
         #endregion
         #region Public methods
@@ -35,11 +36,12 @@ namespace SelfieAWookie.API.UI.Controllers
             // return a status code that can be interpreted by front
             // return this.StatusCode(StatusCodes.Status200OK);
 
-            var model = this._context.Selfies.Include(item => item.Wookie).Select(item => new { Title = item.Title, WookieId = item.Wookie.Id, NbSelfiesFromWookie = item.Wookie.Selfies.Count() }).ToList();
+            var selfiesList = this._repository.GetAll();
+
+            var model = selfiesList.Select(item => new { Title = item.Title, WookieId = item.Wookie.Id, NbSelfiesFromWookie = item.Wookie.Selfies.Count() }).ToList();
             
 
             return this.Ok(model);
-
            
         }
         #endregion

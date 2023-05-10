@@ -5,15 +5,15 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelfieAWookie.API.UI", "MonApplication\SelfieAWookie.API.UI.csproj", "{A83B6FA6-051E-4A98-BEFE-EC9DFAFD5D67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebAPI", "TestWebAPI\TestWebAPI.csproj", "{39463F79-ECD2-4228-940E-3AE136B40FDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestWebAPI", "TestWebAPI\TestWebAPI.csproj", "{39463F79-ECD2-4228-940E-3AE136B40FDB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{724508C2-6E26-44AD-AE73-E0D52537F34E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{3C701EAB-3282-459E-970E-2BC6246D632E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfieAWookies.Core.Selfies.Domain", "SelfieAWookies.Core.Selfies.Domain\SelfieAWookies.Core.Selfies.Domain.csproj", "{E63F5DB2-2C75-4138-B2D0-30CAB8FC6742}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelfieAWookies.Core.Selfies.Domain", "SelfieAWookies.Core.Selfies.Domain\SelfieAWookies.Core.Selfies.Domain.csproj", "{E63F5DB2-2C75-4138-B2D0-30CAB8FC6742}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfieAWookies.Core.Selfies.Infrastructure", "SelfieAWookies.Core.Selfies.Infrastructure\SelfieAWookies.Core.Selfies.Infrastructure.csproj", "{5FC902F2-36CB-4878-A0AC-5F7FAB8BC5F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelfieAWookies.Core.Selfies.Infrastructures", "SelfieAWookies.Core.Selfies.Infrastructure\SelfieAWookies.Core.Selfies.Infrastructures.csproj", "{5FC902F2-36CB-4878-A0AC-5F7FAB8BC5F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

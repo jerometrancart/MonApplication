@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using SelfieAWookies.Core.Selfies.Infrastructure.Data;
+using SelfieAWookies.Core.Selfies.Domain;
+using SelfieAWookies.Core.Selfies.Infrastructures.Data;
+using SelfieAWookies.Core.Selfies.Infrastructures.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +18,9 @@ builder.Services.AddDbContext<SelfiesContext>(options =>
 {
     options.UseSqlServer(connectionString, sqlOptions => { });
 });
+
+//if you meet any occurence of an interface arg, take the class instead
+builder.Services.AddTransient<ISelfieRepository, DefaultSelfieRepository>();
 
 var app = builder.Build();
 

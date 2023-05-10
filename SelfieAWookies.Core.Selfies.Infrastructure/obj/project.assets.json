@@ -3534,9 +3534,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\SelfieAWookies.Core.Selfies.Infrastructure\\SelfieAWookies.Core.Selfies.Infrastructure.csproj",
-      "projectName": "SelfieAWookies.Core.Selfies.Infrastructure",
-      "projectPath": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\SelfieAWookies.Core.Selfies.Infrastructure\\SelfieAWookies.Core.Selfies.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\SelfieAWookies.Core.Selfies.Infrastructure\\SelfieAWookies.Core.Selfies.Infrastructures.csproj",
+      "projectName": "SelfieAWookies.Core.Selfies.Infrastructures",
+      "projectPath": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\SelfieAWookies.Core.Selfies.Infrastructure\\SelfieAWookies.Core.Selfies.Infrastructures.csproj",
       "packagesPath": "C:\\Users\\jerom\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\SelfieAWookies.Core.Selfies.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",

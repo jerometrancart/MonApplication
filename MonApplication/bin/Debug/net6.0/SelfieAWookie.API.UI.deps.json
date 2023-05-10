@@ -12,7 +12,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.5",
           "SelfieAWookies.Core.Selfies.Domain": "1.0.0",
-          "SelfieAWookies.Core.Selfies.Infrastructure": "1.0.0",
+          "SelfieAWookies.Core.Selfies.Infrastructures": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
@@ -754,7 +754,7 @@
           "SelfieAWookies.Core.Selfies.Domain.dll": {}
         }
       },
-      "SelfieAWookies.Core.Selfies.Infrastructure/1.0.0": {
+      "SelfieAWookies.Core.Selfies.Infrastructures/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.5",
@@ -762,7 +762,7 @@
           "SelfieAWookies.Core.Selfies.Domain": "1.0.0"
         },
         "runtime": {
-          "SelfieAWookies.Core.Selfies.Infrastructure.dll": {}
+          "SelfieAWookies.Core.Selfies.Infrastructures.dll": {}
         }
       }
     }
@@ -1296,7 +1296,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "SelfieAWookies.Core.Selfies.Infrastructure/1.0.0": {
+    "SelfieAWookies.Core.Selfies.Infrastructures/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

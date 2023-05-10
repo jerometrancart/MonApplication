@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using SelfieAWookies.Core.Selfies.Domain;
 
-namespace SelfieAWookies.Core.Selfies.Infrastructure.Data.TypeConfiguration
+namespace SelfieAWookies.Core.Selfies.Infrastructures.Data.TypeConfiguration
 {
     /// <summary>
     /// Define all that is needed for the wookie table

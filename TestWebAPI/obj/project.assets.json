@@ -2707,7 +2707,7 @@
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
           "SelfieAWookies.Core.Selfies.Domain": "1.0.0",
-          "SelfieAWookies.Core.Selfies.Infrastructure": "1.0.0",
+          "SelfieAWookies.Core.Selfies.Infrastructures": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "compile": {
@@ -2730,7 +2730,7 @@
           "bin/placeholder/SelfieAWookies.Core.Selfies.Domain.dll": {}
         }
       },
-      "SelfieAWookies.Core.Selfies.Infrastructure/1.0.0": {
+      "SelfieAWookies.Core.Selfies.Infrastructures/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -2740,10 +2740,10 @@
           "SelfieAWookies.Core.Selfies.Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/SelfieAWookies.Core.Selfies.Infrastructure.dll": {}
+          "bin/placeholder/SelfieAWookies.Core.Selfies.Infrastructures.dll": {}
         },
         "runtime": {
-          "bin/placeholder/SelfieAWookies.Core.Selfies.Infrastructure.dll": {}
+          "bin/placeholder/SelfieAWookies.Core.Selfies.Infrastructures.dll": {}
         }
       }
     }
@@ -8600,10 +8600,10 @@
       "path": "../SelfieAWookies.Core.Selfies.Domain/SelfieAWookies.Core.Selfies.Domain.csproj",
       "msbuildProject": "../SelfieAWookies.Core.Selfies.Domain/SelfieAWookies.Core.Selfies.Domain.csproj"
     },
-    "SelfieAWookies.Core.Selfies.Infrastructure/1.0.0": {
+    "SelfieAWookies.Core.Selfies.Infrastructures/1.0.0": {
       "type": "project",
-      "path": "../SelfieAWookies.Core.Selfies.Infrastructure/SelfieAWookies.Core.Selfies.Infrastructure.csproj",
-      "msbuildProject": "../SelfieAWookies.Core.Selfies.Infrastructure/SelfieAWookies.Core.Selfies.Infrastructure.csproj"
+      "path": "../SelfieAWookies.Core.Selfies.Infrastructure/SelfieAWookies.Core.Selfies.Infrastructures.csproj",
+      "msbuildProject": "../SelfieAWookies.Core.Selfies.Infrastructure/SelfieAWookies.Core.Selfies.Infrastructures.csproj"
     }
   },
   "projectFileDependencyGroups": {
