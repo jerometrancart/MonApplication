@@ -28,6 +28,7 @@ namespace SelfieAWookies.Core.Selfies.Infrastructure.Data
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.ApplyConfiguration(new SelfieEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new WookieEntityTypeConfiguration());
         }
 
         #endregion

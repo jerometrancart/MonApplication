@@ -35,12 +35,12 @@ namespace SelfieAWookie.API.UI.Controllers
             // return a status code that can be interpreted by front
             // return this.StatusCode(StatusCodes.Status200OK);
 
-            var model = this._context.Selfies.ToList();
-            var query = from wookie in this._context.Selfies
-                        select wookie;
-            return this.Ok(query.ToList());
+            var model = this._context.Selfies.Include(item => item.Wookie).Select(item => new { Title = item.Title, WookieId = item.Wookie.Id, NbSelfiesFromWookie = item.Wookie.Selfies.Count() }).ToList();
+            
 
             return this.Ok(model);
+
+           
         }
         #endregion
     }
