@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using SelfieAWookies.Core.Selfies.Infrastructures.Data;
 using SelfieAWookie.API.UI;
 using SelfieAWookies.Core.Selfies.Domain;
+using SelfieAWookie.API.UI.Application.DTOs;
 
 namespace SelfieAWookie.API.UI.Controllers
 {
@@ -36,9 +37,10 @@ namespace SelfieAWookie.API.UI.Controllers
             // return a status code that can be interpreted by front
             // return this.StatusCode(StatusCodes.Status200OK);
 
-            var selfiesList = this._repository.GetAll();
+            
+            var selfiesList = this._repository?.GetAll();
 
-            var model = selfiesList.Select(item => new { Title = item.Title, WookieId = item.Wookie.Id, NbSelfiesFromWookie = item.Wookie.Selfies.Count() }).ToList();
+            var model = selfiesList?.Select(item => new SelfieResumeDto { Title = item.Title, WookieId = item.Wookie?.Id, NbSelfiesFromWookie = (item.Wookie?.Selfies?.Count).GetValueOrDefault(0) }).ToList();
             
 
             return this.Ok(model);

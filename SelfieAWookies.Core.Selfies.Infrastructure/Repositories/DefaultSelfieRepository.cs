@@ -16,6 +16,7 @@ namespace SelfieAWookies.Core.Selfies.Infrastructures.Repositories
         #region Fields
         private readonly SelfiesContext? _context = null;
         #endregion
+        //how i wanna get
         #region Constructor
         public DefaultSelfieRepository( SelfiesContext context )
         {

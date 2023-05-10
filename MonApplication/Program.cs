@@ -14,6 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 // Set the connectionString in appsettings.json first
 var connectionString = builder.Configuration.GetConnectionString("SelfiesDatabase");
+// add context in the dependencies, via efcore
 builder.Services.AddDbContext<SelfiesContext>(options =>
 {
     options.UseSqlServer(connectionString, sqlOptions => { });
