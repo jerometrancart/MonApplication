@@ -13,7 +13,7 @@ namespace SelfieAWookies.Core.Selfies.Infrastructure.Data.TypeConfiguration
     /// <summary>
     /// Define all that is needed for the wookie table
     /// </summary>
-    internal class WookieEntityTypeConfiguration : IEntityTypeConfiguration<Wookie>
+    public class WookieEntityTypeConfiguration : IEntityTypeConfiguration<Wookie>
     {
         #region Public methods
         public void Configure(EntityTypeBuilder<Wookie> builder)
