@@ -703,8 +703,16 @@
         }
       },
       "SelfieAWookies.Core.Selfies.Domain/1.0.0": {
+        "dependencies": {
+          "SelfiesAWookie.Core.Framework": "1.0.0"
+        },
         "runtime": {
           "SelfieAWookies.Core.Selfies.Domain.dll": {}
+        }
+      },
+      "SelfiesAWookie.Core.Framework/1.0.0": {
+        "runtime": {
+          "SelfiesAWookie.Core.Framework.dll": {}
         }
       }
     }
@@ -1192,6 +1200,11 @@
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
     "SelfieAWookies.Core.Selfies.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SelfiesAWookie.Core.Framework/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -10,3 +10,6 @@ C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\SelfieAWookies.Core.Self
 C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\SelfieAWookies.Core.Selfies.Domain\obj\Debug\net6.0\refint\SelfieAWookies.Core.Selfies.Domain.dll
 C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\SelfieAWookies.Core.Selfies.Domain\obj\Debug\net6.0\SelfieAWookies.Core.Selfies.Domain.pdb
 C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\SelfieAWookies.Core.Selfies.Domain\obj\Debug\net6.0\ref\SelfieAWookies.Core.Selfies.Domain.dll
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\SelfieAWookies.Core.Selfies.Domain\bin\Debug\net6.0\SelfiesAWookie.Core.Framework.dll
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\SelfieAWookies.Core.Selfies.Domain\bin\Debug\net6.0\SelfiesAWookie.Core.Framework.pdb
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\SelfieAWookies.Core.Selfies.Domain\obj\Debug\net6.0\SelfieAWookies.Core.Selfies.Domain.csproj.CopyComplete

@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using SelfieAWookie.API.UI;
 using SelfieAWookies.Core.Selfies.Domain;
 using SelfieAWookies.Core.Selfies.Infrastructures.Data.TypeConfiguration;
+using SelfiesAWookie.Core.Framework;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
@@ -13,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace SelfieAWookies.Core.Selfies.Infrastructures.Data
 {
-    public class SelfiesContext : DbContext
+    public class SelfiesContext : DbContext, IUnitOfWork
     {
         #region Constructor
         public SelfiesContext([NotNullAttribute] DbContextOptions options) : base(options) { }

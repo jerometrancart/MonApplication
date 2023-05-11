@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using SelfieAWookies.Core.Selfies.Domain;
 using SelfieAWookies.Core.Selfies.Infrastructures.Data;
 using SelfieAWookies.Core.Selfies.Infrastructures.Repositories;
+using SelfieAWookie.API.UI.ExtensionsMethods;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,7 +22,8 @@ builder.Services.AddDbContext<SelfiesContext>(options =>
 });
 
 //if you meet any occurence of an interface arg, take the class instead
-builder.Services.AddTransient<ISelfieRepository, DefaultSelfieRepository>();
+//builder.Services.AddTransient<ISelfieRepository, DefaultSelfieRepository>();
+builder.Services.AddScoped<ISelfieRepository, DefaultSelfieRepository>();
 
 var app = builder.Build();
 

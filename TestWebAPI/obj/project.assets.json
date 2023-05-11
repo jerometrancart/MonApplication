@@ -2781,6 +2781,9 @@
       "SelfieAWookies.Core.Selfies.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SelfiesAWookie.Core.Framework": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/SelfieAWookies.Core.Selfies.Domain.dll": {}
         },
@@ -2802,6 +2805,16 @@
         },
         "runtime": {
           "bin/placeholder/SelfieAWookies.Core.Selfies.Infrastructures.dll": {}
+        }
+      },
+      "SelfiesAWookie.Core.Framework/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SelfiesAWookie.Core.Framework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SelfiesAWookie.Core.Framework.dll": {}
         }
       }
     }
@@ -8737,6 +8750,11 @@
       "type": "project",
       "path": "../SelfieAWookies.Core.Selfies.Infrastructure/SelfieAWookies.Core.Selfies.Infrastructures.csproj",
       "msbuildProject": "../SelfieAWookies.Core.Selfies.Infrastructure/SelfieAWookies.Core.Selfies.Infrastructures.csproj"
+    },
+    "SelfiesAWookie.Core.Framework/1.0.0": {
+      "type": "project",
+      "path": "../SelfiesAWookie.Core.Framework/SelfiesAWookie.Core.Framework.csproj",
+      "msbuildProject": "../SelfiesAWookie.Core.Framework/SelfiesAWookie.Core.Framework.csproj"
     }
   },
   "projectFileDependencyGroups": {

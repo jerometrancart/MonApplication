@@ -15,3 +15,5 @@ C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\SelfieAWookies.Core.Self
 C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\SelfieAWookies.Core.Selfies.Infrastructure\obj\Debug\net6.0\SelfieAWookies.Core.Selfies.Infrastructures.pdb
 C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\SelfieAWookies.Core.Selfies.Infrastructure\obj\Debug\net6.0\SelfieAWookies.Core.Selfies.Infrastructures.genruntimeconfig.cache
 C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\SelfieAWookies.Core.Selfies.Infrastructure\obj\Debug\net6.0\ref\SelfieAWookies.Core.Selfies.Infrastructures.dll
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\SelfieAWookies.Core.Selfies.Infrastructure\bin\Debug\net6.0\SelfiesAWookie.Core.Framework.dll
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\SelfieAWookies.Core.Selfies.Infrastructure\bin\Debug\net6.0\SelfiesAWookie.Core.Framework.pdb

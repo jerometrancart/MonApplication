@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "SelfieAWookies.Core.Selfies.Domain/1.0.0": {
+        "dependencies": {
+          "SelfiesAWookie.Core.Framework": "1.0.0"
+        },
         "runtime": {
           "SelfieAWookies.Core.Selfies.Domain.dll": {}
+        }
+      },
+      "SelfiesAWookie.Core.Framework/1.0.0": {
+        "runtime": {
+          "SelfiesAWookie.Core.Framework.dll": {}
         }
       }
     }
   },
   "libraries": {
     "SelfieAWookies.Core.Selfies.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SelfiesAWookie.Core.Framework/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

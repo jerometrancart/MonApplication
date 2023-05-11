@@ -2,6 +2,7 @@
 using SelfieAWookie.API.UI;
 using SelfieAWookies.Core.Selfies.Domain;
 using SelfieAWookies.Core.Selfies.Infrastructures.Data;
+using SelfiesAWookie.Core.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,12 +23,18 @@ namespace SelfieAWookies.Core.Selfies.Infrastructures.Repositories
         {
             this._context = context;
         }
+
+        
         #endregion
         #region Public methods
         public ICollection<Selfie> GetAll()
         {
             return this._context.Selfies.Include(item => item.Wookie).ToList();
         }
+        #endregion
+
+        #region Properties
+        public IUnitOfWork UnitOfWork => this._context;
         #endregion
     }
 }

@@ -750,6 +750,9 @@
         }
       },
       "SelfieAWookies.Core.Selfies.Domain/1.0.0": {
+        "dependencies": {
+          "SelfiesAWookie.Core.Framework": "1.0.0"
+        },
         "runtime": {
           "SelfieAWookies.Core.Selfies.Domain.dll": {}
         }
@@ -763,6 +766,11 @@
         },
         "runtime": {
           "SelfieAWookies.Core.Selfies.Infrastructures.dll": {}
+        }
+      },
+      "SelfiesAWookie.Core.Framework/1.0.0": {
+        "runtime": {
+          "SelfiesAWookie.Core.Framework.dll": {}
         }
       }
     }
@@ -1297,6 +1305,11 @@
       "sha512": ""
     },
     "SelfieAWookies.Core.Selfies.Infrastructures/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SelfiesAWookie.Core.Framework/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

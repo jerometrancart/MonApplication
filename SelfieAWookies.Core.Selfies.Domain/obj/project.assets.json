@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "SelfiesAWookie.Core.Framework/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SelfiesAWookie.Core.Framework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SelfiesAWookie.Core.Framework.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "SelfiesAWookie.Core.Framework/1.0.0": {
+      "type": "project",
+      "path": "../SelfiesAWookie.Core.Framework/SelfiesAWookie.Core.Framework.csproj",
+      "msbuildProject": "../SelfiesAWookie.Core.Framework/SelfiesAWookie.Core.Framework.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "SelfiesAWookie.Core.Framework >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\jerom\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\SelfiesAWookie.Core.Framework\\SelfiesAWookie.Core.Framework.csproj": {
+              "projectPath": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\SelfiesAWookie.Core.Framework\\SelfiesAWookie.Core.Framework.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
