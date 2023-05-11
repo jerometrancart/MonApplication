@@ -11,6 +11,22 @@ namespace TestWebAPI
     {
         #region Public methods
         [Fact]
+        public void ShouldAddOneSelfie()
+        {
+            // ARRANGE
+            Selfie selfie = new Selfie();
+            var repositoryMock = new Mock<ISelfieRepository>();
+            // ACT
+            var controller = new SelfiesController(repositoryMock.Object);
+            var result = controller.AddOne(selfie);
+            // ASSERT
+            Assert.NotNull(result);
+            Assert.IsType<OkObjectResult>(result);
+
+            var addedSelfie = (result as OkObjectResult).Value as SelfieDto;
+            Assert.NotNull(addedSelfie);
+        }
+        [Fact]
         public void ShouldReturnListOfSelfies()
         {
             // ARRANGE
