@@ -25,6 +25,7 @@ namespace TestWebAPI
 
             var addedSelfie = (result as OkObjectResult).Value as SelfieDto;
             Assert.NotNull(addedSelfie);
+            Assert.True(addedSelfie.Id > 0);
         }
         [Fact]
         public void ShouldReturnListOfSelfies()
