@@ -19,7 +19,7 @@ namespace SelfieAWookies.Core.Selfies.Infrastructures.Repositories
         #endregion
         //how i wanna get
         #region Constructor
-        public DefaultSelfieRepository( SelfiesContext context )
+        public DefaultSelfieRepository( SelfiesContext? context )
         {
             this._context = context;
         }
@@ -29,7 +29,7 @@ namespace SelfieAWookies.Core.Selfies.Infrastructures.Repositories
         #region Public methods
         public ICollection<Selfie> GetAll(int wookieId)
         {
-            var query = this._context.Selfies.Include(item => item.Wookie).AsQueryable();
+            var query = this._context?.Selfies.Include(item => item.Wookie).AsQueryable();
 
             if(wookieId > 0)
             {

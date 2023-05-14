@@ -14,13 +14,17 @@ namespace SelfieAWookie.API.UI.Controllers
     {
         #region Fields
         private readonly ISelfieRepository? _repository = null;
+        private readonly IWebHostEnvironment? _webHostEnvironment = null;
         #endregion
+
         #region Constructor
-        public SelfiesController(ISelfieRepository repository)
+        public SelfiesController(ISelfieRepository repository, IWebHostEnvironment webHostEnvironment)
         {
             this._repository = repository;
+            this._webHostEnvironment = webHostEnvironment;
         }
         #endregion
+
         #region Public methods
         //[HttpGet]
         //public IEnumerable<Selfie> TestAMoi()
@@ -45,6 +49,42 @@ namespace SelfieAWookie.API.UI.Controllers
 
             return this.Ok(model);
            
+        }
+
+        // adding a new picture
+        //[Route("photos")]
+        //[HttpPost]
+        ////use async to avoid overloading the thread
+        //public async Task<IActionResult> AddPicture()
+        //{
+        //    //launch a stream that will end when this body ends
+        //    using var stream = new StreamReader(this.Request.Body);
+
+        //    var content = await stream.ReadToEndAsync();
+
+        //    return this.Ok();
+        //}
+        [Route("photos")]
+        [HttpPost]
+        //use async to avoid overloading the thread
+        public async Task<IActionResult> AddPicture(IFormFile picture)
+        {
+            string filePath = Path.Combine(this._webHostEnvironment.ContentRootPath, @"images\selfies");
+
+            if (!Directory.Exists(filePath))
+            {
+                Directory.CreateDirectory(filePath);
+            }
+            filePath = Path.Combine(filePath, picture.FileName);
+
+            using var stream = new FileStream(filePath, FileMode.OpenOrCreate);
+            await picture.CopyToAsync(stream);
+
+            // using var stream = new StreamReader(picture.OpenReadStream());
+
+            // var content = await stream.ReadToEndAsync();
+
+            return this.Ok();
         }
 
         [HttpPost]
