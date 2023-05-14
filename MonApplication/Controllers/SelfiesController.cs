@@ -80,9 +80,14 @@ namespace SelfieAWookie.API.UI.Controllers
             using var stream = new FileStream(filePath, FileMode.OpenOrCreate);
             await picture.CopyToAsync(stream);
 
-            // using var stream = new StreamReader(picture.OpenReadStream());
-
-            // var content = await stream.ReadToEndAsync();
+            try
+            {
+                this._repository.UnitOfWork.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
 
             return this.Ok();
         }

@@ -20,8 +20,12 @@ namespace SelfieAWookies.Core.Selfies.Domain
         /// <summary>
         /// ADD ONE SELFIE TO DB
         /// </summary>
-        /// <param name="item"></param>
-        /// <returns></returns>
+
         Selfie AddOne(Selfie item);
+
+        /// <summary>
+        /// creates a new picture
+        /// </summary>
+        Picture AddOnePicture(string url);
     }
 }

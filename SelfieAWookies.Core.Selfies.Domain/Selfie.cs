@@ -16,6 +16,10 @@ namespace SelfieAWookie.API.UI
         /// </summary>
         public int WookieId { get; set; }    
         public Wookie? Wookie { get; set; }
+
+        public int PictureId { get; set; }
+
+        public Picture Picture { get; set;}
         #endregion
     }
 }
