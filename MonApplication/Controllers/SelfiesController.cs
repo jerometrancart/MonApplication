@@ -36,7 +36,7 @@ namespace SelfieAWookie.API.UI.Controllers
 
             // return a status code that can be interpreted by front
             // return this.StatusCode(StatusCodes.Status200OK);
-
+            var param = this.Request.Query["wookieId"];
             
             var selfiesList = this._repository?.GetAll(wookieId);
 
