@@ -4,6 +4,7 @@ using SelfieAWookie.API.UI;
 using SelfieAWookie.API.UI.Application.DTOs;
 using SelfieAWookie.API.UI.Controllers;
 using SelfieAWookies.Core.Selfies.Domain;
+using SelfiesAWookie.Core.Framework;
 
 namespace TestWebAPI
 {
@@ -14,8 +15,12 @@ namespace TestWebAPI
         public void ShouldAddOneSelfie()
         {
             // ARRANGE
-            Selfie selfie = new Selfie();
+            SelfieDto selfie = new SelfieDto();
             var repositoryMock = new Mock<ISelfieRepository>();
+            var unit = new Mock<IUnitOfWork>().Object;
+
+            repositoryMock.Setup(item => item.UnitOfWork).Returns(new Mock<IUnitOfWork>().Object);
+            repositoryMock.Setup(item => item.AddOne(It.IsAny<Selfie>())).Returns(new Selfie() { Id = 4 });
             // ACT
             var controller = new SelfiesController(repositoryMock.Object);
             var result = controller.AddOne(selfie);
