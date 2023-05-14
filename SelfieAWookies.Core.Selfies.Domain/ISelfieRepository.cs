@@ -16,7 +16,7 @@ namespace SelfieAWookies.Core.Selfies.Domain
         /// GETS ALL SELFIES
         /// </summary>
         /// <returns></returns>
-        ICollection<Selfie> GetAll();
+        ICollection<Selfie> GetAll(int wookieId);
         /// <summary>
         /// ADD ONE SELFIE TO DB
         /// </summary>

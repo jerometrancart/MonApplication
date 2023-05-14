@@ -18,7 +18,7 @@ namespace TestWebAPI
             SelfieDto selfie = new SelfieDto();
             var repositoryMock = new Mock<ISelfieRepository>();
             var unit = new Mock<IUnitOfWork>().Object;
-
+            //WHEN YOU USE MOCK YOU HAVE TO MOCK EVERYTHING
             repositoryMock.Setup(item => item.UnitOfWork).Returns(new Mock<IUnitOfWork>().Object);
             repositoryMock.Setup(item => item.AddOne(It.IsAny<Selfie>())).Returns(new Selfie() { Id = 4 });
             // ACT
@@ -44,12 +44,12 @@ namespace TestWebAPI
             //simulate 
             var repositoryMock = new Mock<ISelfieRepository>();
 
-            repositoryMock.Setup(item => item.GetAll()).Returns(expectedList);
+            repositoryMock.Setup(item => item.GetAll(It.IsAny<int>())).Returns(expectedList);
 
             var controller = new SelfiesController(repositoryMock.Object);
 
             // ACT
-            var result = controller.TestAMoi();
+            var result = controller.GetAll();
 
             // ASSERT
             Assert.NotNull(result);
