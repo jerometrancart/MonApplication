@@ -23,7 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SelfieAWookies.Core.Selfies.Data.Migrations\SelfieAWookies.Core.Selfies.Data.Migrations.csproj" />
     <ProjectReference Include="..\SelfieAWookies.Core.Selfies.Domain\SelfieAWookies.Core.Selfies.Domain.csproj" />
     <ProjectReference Include="..\SelfiesAWookie.Core.Framework\SelfiesAWookie.Core.Framework.csproj" />
   </ItemGroup>
