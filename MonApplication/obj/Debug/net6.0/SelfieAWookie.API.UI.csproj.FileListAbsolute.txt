@@ -91,3 +91,9 @@ C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug
 C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\SelfieAWookies.Core.Selfies.Infrastructures.pdb
 C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\SelfiesAWookie.Core.Framework.dll
 C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\SelfiesAWookie.Core.Framework.pdb
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
