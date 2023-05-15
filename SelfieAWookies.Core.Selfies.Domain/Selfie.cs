@@ -19,7 +19,7 @@ namespace SelfieAWookie.API.UI
 
         public int PictureId { get; set; }
 
-        public Picture Picture { get; set;}
+        public Picture? Picture { get; set;}
         #endregion
     }
 }
