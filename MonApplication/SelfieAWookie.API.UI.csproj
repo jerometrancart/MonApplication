@@ -22,7 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SelfieAWookies.Core.Selfies.Domain\SelfieAWookies.Core.Selfies.Domain.csproj" />
-    <ProjectReference Include="..\SelfieAWookies.Core.Selfies.Infrastructure\SelfieAWookies.Core.Selfies.Infrastructures.csproj" />
+    <ProjectReference Include="..\SelfieAWookies.Core.Selfies.Infrastructure\SelfieAWookies.Core.Selfies.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

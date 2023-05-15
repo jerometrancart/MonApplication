@@ -1278,6 +1278,20 @@
           }
         }
       },
+      "SelfieAWookies.Core.Selfies.Data.Migrations/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.5",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.5"
+        },
+        "compile": {
+          "bin/placeholder/SelfieAWookies.Core.Selfies.Data.Migrations.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SelfieAWookies.Core.Selfies.Data.Migrations.dll": {}
+        }
+      },
       "SelfieAWookies.Core.Selfies.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3810,6 +3824,11 @@
         "version.txt"
       ]
     },
+    "SelfieAWookies.Core.Selfies.Data.Migrations/1.0.0": {
+      "type": "project",
+      "path": "../SelfieAWookies.Core.Selfies.Data.Migrations/SelfieAWookies.Core.Selfies.Data.Migrations.csproj",
+      "msbuildProject": "../SelfieAWookies.Core.Selfies.Data.Migrations/SelfieAWookies.Core.Selfies.Data.Migrations.csproj"
+    },
     "SelfieAWookies.Core.Selfies.Domain/1.0.0": {
       "type": "project",
       "path": "../SelfieAWookies.Core.Selfies.Domain/SelfieAWookies.Core.Selfies.Domain.csproj",
@@ -3830,7 +3849,9 @@
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.5",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.Configuration.Json >= 7.0.0",
-      "SelfieAWookies.Core.Selfies.Domain >= 1.0.0"
+      "SelfieAWookies.Core.Selfies.Data.Migrations >= 1.0.0",
+      "SelfieAWookies.Core.Selfies.Domain >= 1.0.0",
+      "SelfiesAWookie.Core.Framework >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3840,9 +3861,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\SelfieAWookies.Core.Selfies.Infrastructure\\SelfieAWookies.Core.Selfies.Infrastructures.csproj",
-      "projectName": "SelfieAWookies.Core.Selfies.Infrastructures",
-      "projectPath": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\SelfieAWookies.Core.Selfies.Infrastructure\\SelfieAWookies.Core.Selfies.Infrastructures.csproj",
+      "projectUniqueName": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\SelfieAWookies.Core.Selfies.Infrastructure\\SelfieAWookies.Core.Selfies.Infrastructure.csproj",
+      "projectName": "SelfieAWookies.Core.Selfies.Infrastructure",
+      "projectPath": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\SelfieAWookies.Core.Selfies.Infrastructure\\SelfieAWookies.Core.Selfies.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\jerom\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\SelfieAWookies.Core.Selfies.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
@@ -3866,8 +3887,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\SelfieAWookies.Core.Selfies.Data.Migrations\\SelfieAWookies.Core.Selfies.Data.Migrations.csproj": {
+              "projectPath": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\SelfieAWookies.Core.Selfies.Data.Migrations\\SelfieAWookies.Core.Selfies.Data.Migrations.csproj"
+            },
             "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\SelfieAWookies.Core.Selfies.Domain\\SelfieAWookies.Core.Selfies.Domain.csproj": {
               "projectPath": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\SelfieAWookies.Core.Selfies.Domain\\SelfieAWookies.Core.Selfies.Domain.csproj"
+            },
+            "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\SelfiesAWookie.Core.Framework\\SelfiesAWookie.Core.Framework.csproj": {
+              "projectPath": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\SelfiesAWookie.Core.Framework\\SelfiesAWookie.Core.Framework.csproj"
             }
           }
         }

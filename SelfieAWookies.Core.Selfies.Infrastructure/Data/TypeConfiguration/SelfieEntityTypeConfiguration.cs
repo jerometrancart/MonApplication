@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SelfieAWookies.Core.Selfies.Infrastructures.Data.TypeConfiguration
+namespace SelfieAWookies.Core.Selfies.Infrastructure.Data.TypeConfiguration
 { 
     public class SelfieEntityTypeConfiguration : IEntityTypeConfiguration<Selfie>
     {

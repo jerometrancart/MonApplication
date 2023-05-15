@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SelfieAWookies.Core.Selfies.Infrastructures.Data
+namespace SelfieAWookies.Core.Selfies.Infrastructure.Data
 {
     internal class SelfiesContextFactory : IDesignTimeDbContextFactory<SelfiesContext>
     {
@@ -27,9 +27,9 @@ namespace SelfieAWookies.Core.Selfies.Infrastructures.Data
 
             DbContextOptionsBuilder builder = new DbContextOptionsBuilder();
 
-            builder.UseSqlServer(configurationRoot.GetConnectionString("SelfiesDatabase"));
-
-            SelfiesContext context = new SelfiesContext();
+            builder.UseSqlServer(configurationRoot.GetConnectionString("SelfiesDatabase"), b => b.MigrationsAssembly("SelfieAWookies.Core.Selfies.Data.Migrations"));
+            //, b => b.MigrationsAssembly("SelfieAWookies.Core.Selfies.Data.Migrations")
+            SelfiesContext context = new SelfiesContext(builder.Options);
 
             return context;
         }

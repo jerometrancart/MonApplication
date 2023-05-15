@@ -1,5 +1,5 @@
 ﻿using SelfieAWookies.Core.Selfies.Domain;
-using SelfieAWookies.Core.Selfies.Infrastructures.Repositories;
+using SelfieAWookies.Core.Selfies.Infrastructure.Repositories;
 
 namespace SelfieAWookie.API.UI.ExtensionsMethods
 {

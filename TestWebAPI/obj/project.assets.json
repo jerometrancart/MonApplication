@@ -2906,7 +2906,7 @@
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
           "SelfieAWookies.Core.Selfies.Domain": "1.0.0",
-          "SelfieAWookies.Core.Selfies.Infrastructures": "1.0.0",
+          "SelfieAWookies.Core.Selfies.Infrastructure": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "compile": {
@@ -2918,6 +2918,20 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "SelfieAWookies.Core.Selfies.Data.Migrations/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.5",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.5"
+        },
+        "compile": {
+          "bin/placeholder/SelfieAWookies.Core.Selfies.Data.Migrations.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SelfieAWookies.Core.Selfies.Data.Migrations.dll": {}
+        }
       },
       "SelfieAWookies.Core.Selfies.Domain/1.0.0": {
         "type": "project",
@@ -2932,7 +2946,7 @@
           "bin/placeholder/SelfieAWookies.Core.Selfies.Domain.dll": {}
         }
       },
-      "SelfieAWookies.Core.Selfies.Infrastructures/1.0.0": {
+      "SelfieAWookies.Core.Selfies.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -2941,13 +2955,15 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Microsoft.Extensions.Configuration.Json": "7.0.0",
-          "SelfieAWookies.Core.Selfies.Domain": "1.0.0"
+          "SelfieAWookies.Core.Selfies.Data.Migrations": "1.0.0",
+          "SelfieAWookies.Core.Selfies.Domain": "1.0.0",
+          "SelfiesAWookie.Core.Framework": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/SelfieAWookies.Core.Selfies.Infrastructures.dll": {}
+          "bin/placeholder/SelfieAWookies.Core.Selfies.Infrastructure.dll": {}
         },
         "runtime": {
-          "bin/placeholder/SelfieAWookies.Core.Selfies.Infrastructures.dll": {}
+          "bin/placeholder/SelfieAWookies.Core.Selfies.Infrastructure.dll": {}
         }
       },
       "SelfiesAWookie.Core.Framework/1.0.0": {
@@ -9104,15 +9120,20 @@
       "path": "../MonApplication/SelfieAWookie.API.UI.csproj",
       "msbuildProject": "../MonApplication/SelfieAWookie.API.UI.csproj"
     },
+    "SelfieAWookies.Core.Selfies.Data.Migrations/1.0.0": {
+      "type": "project",
+      "path": "../SelfieAWookies.Core.Selfies.Data.Migrations/SelfieAWookies.Core.Selfies.Data.Migrations.csproj",
+      "msbuildProject": "../SelfieAWookies.Core.Selfies.Data.Migrations/SelfieAWookies.Core.Selfies.Data.Migrations.csproj"
+    },
     "SelfieAWookies.Core.Selfies.Domain/1.0.0": {
       "type": "project",
       "path": "../SelfieAWookies.Core.Selfies.Domain/SelfieAWookies.Core.Selfies.Domain.csproj",
       "msbuildProject": "../SelfieAWookies.Core.Selfies.Domain/SelfieAWookies.Core.Selfies.Domain.csproj"
     },
-    "SelfieAWookies.Core.Selfies.Infrastructures/1.0.0": {
+    "SelfieAWookies.Core.Selfies.Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../SelfieAWookies.Core.Selfies.Infrastructure/SelfieAWookies.Core.Selfies.Infrastructures.csproj",
-      "msbuildProject": "../SelfieAWookies.Core.Selfies.Infrastructure/SelfieAWookies.Core.Selfies.Infrastructures.csproj"
+      "path": "../SelfieAWookies.Core.Selfies.Infrastructure/SelfieAWookies.Core.Selfies.Infrastructure.csproj",
+      "msbuildProject": "../SelfieAWookies.Core.Selfies.Infrastructure/SelfieAWookies.Core.Selfies.Infrastructure.csproj"
     },
     "SelfiesAWookie.Core.Framework/1.0.0": {
       "type": "project",

@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SelfieAWookie.API.UI;
 using SelfieAWookies.Core.Selfies.Domain;
-using SelfieAWookies.Core.Selfies.Infrastructures.Data;
+using SelfieAWookies.Core.Selfies.Infrastructure.Data;
 using SelfiesAWookie.Core.Framework;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SelfieAWookies.Core.Selfies.Infrastructures.Repositories
+namespace SelfieAWookies.Core.Selfies.Infrastructure.Repositories
 {
     public class DefaultSelfieRepository : ISelfieRepository
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SelfieAWookies.Core.Selfies.Infrastructures.Data;
+using SelfieAWookies.Core.Selfies.Infrastructure.Data;
 using SelfieAWookie.API.UI;
 using SelfieAWookies.Core.Selfies.Domain;
 using SelfieAWookie.API.UI.Application.DTOs;

@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\SelfieAWookie.API.UI.props" />
-</Project>

@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using SelfieAWookie.API.UI;
 using SelfieAWookies.Core.Selfies.Domain;
-using SelfieAWookies.Core.Selfies.Infrastructures.Data.TypeConfiguration;
+using SelfieAWookies.Core.Selfies.Infrastructure.Data.TypeConfiguration;
 using SelfiesAWookie.Core.Framework;
 using System;
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace SelfieAWookies.Core.Selfies.Infrastructures.Data
+namespace SelfieAWookies.Core.Selfies.Infrastructure.Data
 {
     public class SelfiesContext : DbContext, IUnitOfWork
     {
@@ -27,7 +27,7 @@ namespace SelfieAWookies.Core.Selfies.Infrastructures.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
+            
             modelBuilder.ApplyConfiguration(new SelfieEntityTypeConfiguration());
             modelBuilder.ApplyConfiguration(new WookieEntityTypeConfiguration());
         }

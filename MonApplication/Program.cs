@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using SelfieAWookies.Core.Selfies.Domain;
-using SelfieAWookies.Core.Selfies.Infrastructures.Data;
-using SelfieAWookies.Core.Selfies.Infrastructures.Repositories;
+using SelfieAWookies.Core.Selfies.Infrastructure.Data;
+using SelfieAWookies.Core.Selfies.Infrastructure.Repositories;
 using SelfieAWookie.API.UI.ExtensionsMethods;
 
 var builder = WebApplication.CreateBuilder(args);

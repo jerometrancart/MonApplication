@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+1Z5FLXJiqPSKlvZOQpZ5PTnO8VnoO75rbzuQQc8HclGAoohAaEzGzwvUk97NouaZYgxCRZ9ZiOT1qobT5XxAA==",
+  "dgSpecHash": "e1SyOQvP7KoVEqsilZZb876oPHp+Mt+Zc0SLoogtkdyrCLizIAWP4FATSZ1kBI7zFgurNs4horvGy0/Vx+UeAQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\SelfieAWookies.Core.Selfies.Infrastructure\\SelfieAWookies.Core.Selfies.Infrastructures.csproj",
+  "projectFilePath": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\SelfieAWookies.Core.Selfies.Infrastructure\\SelfieAWookies.Core.Selfies.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jerom\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\jerom\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
