@@ -5,11 +5,14 @@ using SelfieAWookies.Core.Selfies.Infrastructure.Data;
 using SelfieAWookie.API.UI;
 using SelfieAWookies.Core.Selfies.Domain;
 using SelfieAWookie.API.UI.Application.DTOs;
+using Microsoft.AspNetCore.Cors;
+using SelfieAWookie.API.UI.ExtensionsMethods;
 
 namespace SelfieAWookie.API.UI.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
+    [EnableCors(SecurityMethods.DEFAULT_POLICY)]
     public class SelfiesController : ControllerBase
     {
         #region Fields
@@ -33,6 +36,7 @@ namespace SelfieAWookie.API.UI.Controllers
         //}
 
         [HttpGet]
+        //[EnableCors(SecurityMethods.DEFAULT_POLICY_3)]
         public IActionResult GetAll([FromQuery] int wookieId = 0)
         {
             // modele = what i want as data is return

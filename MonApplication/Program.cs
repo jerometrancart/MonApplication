@@ -4,6 +4,7 @@ using SelfieAWookies.Core.Selfies.Infrastructure.Data;
 using SelfieAWookies.Core.Selfies.Infrastructure.Repositories;
 using SelfieAWookie.API.UI.ExtensionsMethods;
 using System.Net;
+using System.Runtime.CompilerServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,7 +23,7 @@ builder.Services.AddDbContext<SelfiesContext>(options =>
     options.UseSqlServer(connectionString, sqlOptions => { });
 });
 
-builder.Services.AddcustomSecurity();
+builder.Services.AddcustomSecurity(builder.Configuration);
 
 builder.Services.AddHttpsRedirection(options =>
 {
