@@ -3,6 +3,7 @@ using SelfieAWookies.Core.Selfies.Domain;
 using SelfieAWookies.Core.Selfies.Infrastructure.Data;
 using SelfieAWookies.Core.Selfies.Infrastructure.Repositories;
 using SelfieAWookie.API.UI.ExtensionsMethods;
+using System.Net;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +22,14 @@ builder.Services.AddDbContext<SelfiesContext>(options =>
     options.UseSqlServer(connectionString, sqlOptions => { });
 });
 
+builder.Services.AddcustomSecurity();
+
+builder.Services.AddHttpsRedirection(options =>
+{
+    options.RedirectStatusCode = (int)HttpStatusCode.TemporaryRedirect;
+    options.HttpsPort = 5030;
+});
+
 //if you meet any occurence of an interface arg, take the class instead
 //builder.Services.AddTransient<ISelfieRepository, DefaultSelfieRepository>();
 builder.Services.AddScoped<ISelfieRepository, DefaultSelfieRepository>();
@@ -32,7 +41,11 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.UseHsts();
 }
+
+app.UseHttpsRedirection();
+app.UseCors(SecurityMethods.DEFAULT_POLICY);
 
 app.UseAuthorization();
 
