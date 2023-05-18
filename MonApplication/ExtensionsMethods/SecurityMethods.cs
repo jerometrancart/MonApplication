@@ -32,7 +32,7 @@ namespace SelfieAWookie.API.UI.ExtensionsMethods
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             }).AddJwtBearer(options =>
             {
-                string maClef = configuration["Jwt:Key"];
+                string? maClef = configuration["Jwt:Key"];
                 options.SaveToken = true;
                 options.TokenValidationParameters = new TokenValidationParameters()
                 {
