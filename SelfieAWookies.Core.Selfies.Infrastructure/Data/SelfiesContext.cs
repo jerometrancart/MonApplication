@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using SelfieAWookie.API.UI;
 using SelfieAWookies.Core.Selfies.Domain;
@@ -14,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace SelfieAWookies.Core.Selfies.Infrastructure.Data
 {
-    public class SelfiesContext : DbContext, IUnitOfWork
+    public class SelfiesContext : IdentityDbContext, IUnitOfWork
     {
         #region Constructor
         public SelfiesContext([NotNullAttribute] DbContextOptions options) : base(options) { }

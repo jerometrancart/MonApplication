@@ -1,4 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using System.Runtime.CompilerServices;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 
 namespace SelfieAWookie.API.UI.ExtensionsMethods
 {
@@ -9,12 +12,39 @@ namespace SelfieAWookie.API.UI.ExtensionsMethods
     {
         #region Constants
         public const string DEFAULT_POLICY = "DEFAULT_POLICY";
-        public const string DEFAULT_POLICY_2= "DEFAULT_POLICY 2";
+        public const string DEFAULT_POLICY_2 = "DEFAULT_POLICY 2";
         public const string DEFAULT_POLICY_3 = "DEFAULT_POLICY 3";
         #endregion
 
         #region Public methods
         public static void AddcustomSecurity(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddCustomCors(configuration);
+            services.AddCustomAuthentication(configuration);
+        }
+
+        public static void AddCustomAuthentication (this IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(options =>
+            {
+                string maClef = configuration["Jwt:Key"];
+                options.SaveToken = true;
+                options.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(maClef)),
+                    ValidateAudience = false,
+                    ValidateIssuer = false,
+                    ValidateActor = false,
+                    ValidateLifetime = true
+                };
+            }); 
+        }
+        public static void AddCustomCors (this IServiceCollection services, IConfiguration configuration)
         {
             services.AddCors(options =>
             {

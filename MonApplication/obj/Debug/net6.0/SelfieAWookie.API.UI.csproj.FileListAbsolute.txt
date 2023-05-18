@@ -97,3 +97,9 @@ C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\obj\Debug
 C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\obj\Debug\net6.0\SelfieAWookie.API.UI.pdb
 C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\obj\Debug\net6.0\SelfieAWookie.API.UI.genruntimeconfig.cache
 C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\obj\Debug\net6.0\ref\SelfieAWookie.API.UI.dll
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
