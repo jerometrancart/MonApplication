@@ -12,6 +12,7 @@ namespace SelfieAWookies.Core.Selfies.Domain
     {
         #region Properties
         public int Id { get; set; }
+        public string Name { get; set; }
         //to avoid cycle dependency
         //[JsonIgnore]
         public List<Selfie>? Selfies { get; set; }  
