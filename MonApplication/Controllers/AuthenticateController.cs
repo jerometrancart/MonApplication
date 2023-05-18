@@ -28,6 +28,27 @@ namespace SelfieAWookie.API.UI.Controllers
 
         #region Public methods
         [HttpPost]
+        [Route("register")]
+        public async Task<IActionResult> Register([FromBody] AuthenticateUserDto dtoUser)
+        {
+            IActionResult result = this.BadRequest();
+
+            var user = new IdentityUser(dtoUser.Login);
+            user.Email = dtoUser.Login;
+            user.UserName = dtoUser.Name;
+            var success = await this._userManager.CreateAsync(user);
+            
+            if(success.Succeeded) 
+            { 
+                dtoUser.Token = this.GenerateJwtToken(user);
+                result = this.Ok(dtoUser);
+            }
+
+            return result;
+        }
+
+
+        [HttpPost]
         public async Task<IActionResult> Login([FromBody] AuthenticateUserDto dtoUser)
         {
             IActionResult result = this.BadRequest();

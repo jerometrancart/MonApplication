@@ -7,12 +7,15 @@ using SelfieAWookies.Core.Selfies.Domain;
 using SelfieAWookie.API.UI.Application.DTOs;
 using Microsoft.AspNetCore.Cors;
 using SelfieAWookie.API.UI.ExtensionsMethods;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace SelfieAWookie.API.UI.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
     [EnableCors(SecurityMethods.DEFAULT_POLICY)]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class SelfiesController : ControllerBase
     {
         #region Fields
