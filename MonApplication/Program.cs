@@ -5,9 +5,7 @@ using SelfieAWookies.Core.Selfies.Infrastructure.Repositories;
 using SelfieAWookie.API.UI.ExtensionsMethods;
 using System.Net;
 using Microsoft.AspNetCore.Identity;
-
-
-
+using System.Runtime.CompilerServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,7 +29,7 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options =>
     //options.Signin.RequireConfirmedEmail = true;
 }).AddEntityFrameworkStores<SelfiesContext>();
 
-
+builder.Services.AddCustomOptions(builder.Configuration);
 builder.Services.AddcustomSecurity(builder.Configuration);
 
 builder.Services.AddHttpsRedirection(options =>
