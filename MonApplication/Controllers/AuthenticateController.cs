@@ -53,25 +53,37 @@ namespace SelfieAWookie.API.UI.Controllers
 
 
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Login([FromBody] AuthenticateUserDto dtoUser)
         {
             IActionResult result = this.BadRequest();
-
-            var user = await this._userManager.FindByEmailAsync(dtoUser.Login);
-            if (user != null) 
+            try
             {
-                var verif = await this._userManager.CheckPasswordAsync(user, dtoUser.Password);
-                if (verif)
+                var user = await this._userManager.FindByEmailAsync(dtoUser.Login);
+                if (user != null)
                 {
-                    result = this.Ok(new AuthenticateUserDto()
+                    var verif = await this._userManager.CheckPasswordAsync(user, dtoUser.Password);
+                    if (verif)
                     {
-                        Login = user.Email,
-                        Name = user.UserName,
-                        Token = this.GenerateJwtToken(user)
-                    });
+                        result = this.Ok(new AuthenticateUserDto()
+                        {
+                            Login = user.Email,
+                            Name = user.UserName,
+                            Token = this.GenerateJwtToken(user)
+                        });
+                    }
                 }
+                return result;
             }
-            return result;
+
+            catch (Exception ex)
+            {
+                result = this.Problem("Cannot log");
+                return result;
+            }
+            
         }
         #endregion
 
