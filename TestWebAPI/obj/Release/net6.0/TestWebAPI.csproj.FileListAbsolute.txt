@@ -1,0 +1,6 @@
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\TestWebAPI\bin\Release\net6.0\CoverletSourceRootsMapping
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\TestWebAPI\obj\Release\net6.0\TestWebAPI.csproj.AssemblyReference.cache
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\TestWebAPI\obj\Release\net6.0\TestWebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\TestWebAPI\obj\Release\net6.0\TestWebAPI.AssemblyInfoInputs.cache
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\TestWebAPI\obj\Release\net6.0\TestWebAPI.AssemblyInfo.cs
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\TestWebAPI\obj\Release\net6.0\TestWebAPI.csproj.CoreCompileInputs.cache

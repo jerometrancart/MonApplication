@@ -1,0 +1,3 @@
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\SelfiesAWookie.Core.Framework\bin\Debug\net6.0\publish\SelfiesAWookie.Core.Framework.dll
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\SelfiesAWookie.Core.Framework\bin\Debug\net6.0\publish\SelfiesAWookie.Core.Framework.deps.json
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\SelfiesAWookie.Core.Framework\bin\Debug\net6.0\publish\SelfiesAWookie.Core.Framework.pdb

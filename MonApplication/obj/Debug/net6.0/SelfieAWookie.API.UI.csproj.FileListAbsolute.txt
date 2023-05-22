@@ -106,3 +106,4 @@ C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug
 C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\SelfieAWookie.API.UI.staticwebassets.runtime.json
 C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\appsettings.Staging.json

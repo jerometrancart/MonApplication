@@ -1,0 +1,5 @@
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\SelfieAWookies.Core.Selfies.Domain\bin\Release\net6.0\publish\SelfieAWookies.Core.Selfies.Domain.dll
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\SelfieAWookies.Core.Selfies.Domain\bin\Release\net6.0\publish\SelfieAWookies.Core.Selfies.Domain.deps.json
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\SelfieAWookies.Core.Selfies.Domain\bin\Release\net6.0\publish\SelfieAWookies.Core.Selfies.Domain.pdb
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\SelfieAWookies.Core.Selfies.Domain\bin\Release\net6.0\publish\SelfiesAWookie.Core.Framework.dll
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\SelfieAWookies.Core.Selfies.Domain\bin\Release\net6.0\publish\SelfiesAWookie.Core.Framework.pdb
