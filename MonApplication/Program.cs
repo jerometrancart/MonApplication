@@ -6,9 +6,12 @@ using SelfieAWookie.API.UI.ExtensionsMethods;
 using System.Net;
 using Microsoft.AspNetCore.Identity;
 using System.Runtime.CompilerServices;
+using SelfieAWookies.Core.Selfies.Infrastructure.Loggers;
+using SelfieAWookie.API.UI.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -43,8 +46,15 @@ builder.Services.AddHttpsRedirection(options =>
 //builder.Services.AddTransient<ISelfieRepository, DefaultSelfieRepository>();
 builder.Services.AddScoped<ISelfieRepository, DefaultSelfieRepository>();
 
+
+
 var app = builder.Build();
 
+//adds the provider to factory
+var loggerFactory = app.Services.GetRequiredService<ILoggerFactory>();
+loggerFactory.AddProvider(new CustomLoggerProvider());
+
+app.UseMiddleware<LogRequestMiddleware>();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
