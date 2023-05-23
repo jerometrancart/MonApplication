@@ -30,8 +30,4 @@
     <ProjectReference Include="..\SelfieAWookies.Core.Selfies.Infrastructure\SelfieAWookies.Core.Selfies.Infrastructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Application\Commands\" />
-  </ItemGroup>
-
 </Project>

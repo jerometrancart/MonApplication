@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using MediatR;
 using SelfieAWookie.API.UI.Application.Queries;
+using SelfieAWookie.API.UI.Application.Commands;
 
 namespace SelfieAWookie.API.UI.Controllers
 {
@@ -101,23 +102,17 @@ namespace SelfieAWookie.API.UI.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddOne(SelfieDto dto)
+        public async Task<IActionResult> AddOne(SelfieDto dto)
         {
             //INIT THE VALUE FOR RESULT
             IActionResult result = this.BadRequest();
 
-            Selfie addSelfie = this._repository.AddOne(new Selfie()
-            {
-                ImagePath = dto.ImagePath,
-                Title = dto.Title,
-            });
-            this._repository.UnitOfWork.SaveChanges();
+           
 
-            if(addSelfie != null)
+            var item = await this._mediator.Send(new AddSelfieCommand() { Item = dto });
+            if (item != null)
             {
-                dto.Id = addSelfie.Id;
-                result = this.Ok(dto);
-
+                result = this.Ok(item);
             }
 
             return result;
