@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TlqaN2YGglzNFfB2KJe1RXsAFi9ODV3I1JBiQrYL+p24fjQVPhWAFekpPIG/8QUTLD8n3euH5Rb1bCBTxFdTag==",
+  "dgSpecHash": "BloVFXDPIBY/2gBLoL/hjjOEK0sE0s9sxKlI+54ShZsJFRkv8Vd0jZOurIek8Tm4zXjACOBS2qgsmWSmSl7gPA==",
   "success": true,
   "projectFilePath": "C:\\Users\\jerom\\source\\repos\\ASP.Net_Core\\MonApplication\\TestWebAPI\\TestWebAPI.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,8 @@
     "C:\\Users\\jerom\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\jerom\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\jerom\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
+    "C:\\Users\\jerom\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
+    "C:\\Users\\jerom\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\jerom\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.16\\microsoft.aspnetcore.authentication.jwtbearer.6.0.16.nupkg.sha512",
     "C:\\Users\\jerom\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.16\\microsoft.aspnetcore.cryptography.internal.6.0.16.nupkg.sha512",
     "C:\\Users\\jerom\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.16\\microsoft.aspnetcore.cryptography.keyderivation.6.0.16.nupkg.sha512",

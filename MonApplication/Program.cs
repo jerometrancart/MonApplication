@@ -42,10 +42,7 @@ builder.Services.AddHttpsRedirection(options =>
 });
 
 
-//if you meet any occurence of an interface arg, take the class instead
-//builder.Services.AddTransient<ISelfieRepository, DefaultSelfieRepository>();
-builder.Services.AddScoped<ISelfieRepository, DefaultSelfieRepository>();
-
+builder.Services.AddInjections();
 
 
 var app = builder.Build();

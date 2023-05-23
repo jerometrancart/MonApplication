@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Cors;
 using SelfieAWookie.API.UI.ExtensionsMethods;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using MediatR;
+using SelfieAWookie.API.UI.Application.Queries;
 
 namespace SelfieAWookie.API.UI.Controllers
 {
@@ -21,13 +23,15 @@ namespace SelfieAWookie.API.UI.Controllers
         #region Fields
         private readonly ISelfieRepository? _repository = null;
         private readonly IWebHostEnvironment? _webHostEnvironment = null;
+        private readonly IMediator? _mediator = null;
         #endregion
 
         #region Constructor
-        public SelfiesController(ISelfieRepository repository, IWebHostEnvironment webHostEnvironment)
+        public SelfiesController(IMediator mediator, ISelfieRepository repository, IWebHostEnvironment webHostEnvironment)
         {
             this._repository = repository;
             this._webHostEnvironment = webHostEnvironment;
+            this._mediator = mediator;
         }
         #endregion
 
@@ -48,11 +52,8 @@ namespace SelfieAWookie.API.UI.Controllers
             // return a status code that can be interpreted by front
             // return this.StatusCode(StatusCodes.Status200OK);
             var param = this.Request.Query["wookieId"];
-            
-            var selfiesList = this._repository?.GetAll(wookieId);
 
-            var model = selfiesList?.Select(item => new SelfieResumeDto { Title = item.Title, WookieId = item.Wookie?.Id, NbSelfiesFromWookie = (item.Wookie?.Selfies?.Count).GetValueOrDefault(0) }).ToList();
-            
+            var model = this._mediator.Send(new SelectAllSelfiesQuery() { WookieId = wookieId });
 
             return this.Ok(model);
            

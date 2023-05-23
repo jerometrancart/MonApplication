@@ -107,3 +107,5 @@ C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug
 C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\appsettings.Staging.json
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\MediatR.dll
+C:\Users\jerom\source\repos\ASP.Net_Core\MonApplication\MonApplication\bin\Debug\net6.0\MediatR.Contracts.dll
